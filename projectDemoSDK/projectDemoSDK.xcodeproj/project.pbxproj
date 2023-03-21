@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		90B48A2129C978E700FF9283 /* projectDemoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B48A1829C978E700FF9283 /* projectDemoSDK.framework */; };
-		90B48A2629C978E700FF9283 /* projectDemoSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B48A2529C978E700FF9283 /* projectDemoSDKTests.swift */; };
 		90B48A2729C978E700FF9283 /* projectDemoSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B48A1B29C978E700FF9283 /* projectDemoSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90B48A3329C9794100FF9283 /* projectDemoSDKTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 90B48A2029C978E700FF9283 /* projectDemoSDKTests.xctest */; };
 		90B48A5B29C97A6400FF9283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B48A5A29C97A6400FF9283 /* AppDelegate.swift */; };
@@ -17,6 +16,7 @@
 		90B48A6229C97A6400FF9283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90B48A6029C97A6400FF9283 /* Main.storyboard */; };
 		90B48A6429C97A6500FF9283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90B48A6329C97A6500FF9283 /* Assets.xcassets */; };
 		90B48A6729C97A6500FF9283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90B48A6529C97A6500FF9283 /* LaunchScreen.storyboard */; };
+		90B48A6D29C9827900FF9283 /* projectDemoSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B48A6C29C9827900FF9283 /* projectDemoSDK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,6 @@
 		90B48A1829C978E700FF9283 /* projectDemoSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = projectDemoSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B48A1B29C978E700FF9283 /* projectDemoSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = projectDemoSDK.h; sourceTree = "<group>"; };
 		90B48A2029C978E700FF9283 /* projectDemoSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectDemoSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		90B48A2529C978E700FF9283 /* projectDemoSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectDemoSDKTests.swift; sourceTree = "<group>"; };
 		90B48A5829C97A6400FF9283 /* projectDemoSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectDemoSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B48A5A29C97A6400FF9283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90B48A5C29C97A6400FF9283 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		90B48A6329C97A6500FF9283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90B48A6629C97A6500FF9283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90B48A6829C97A6500FF9283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90B48A6C29C9827900FF9283 /* projectDemoSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectDemoSDK.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				90B48A1A29C978E700FF9283 /* projectDemoSDK */,
-				90B48A2429C978E700FF9283 /* projectDemoSDKTests */,
 				90B48A5929C97A6400FF9283 /* projectDemoSDKExample */,
 				90B48A1929C978E700FF9283 /* Products */,
 				90B48A3029C9791600FF9283 /* Frameworks */,
@@ -95,16 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				90B48A1B29C978E700FF9283 /* projectDemoSDK.h */,
+				90B48A6C29C9827900FF9283 /* projectDemoSDK.swift */,
 			);
 			path = projectDemoSDK;
-			sourceTree = "<group>";
-		};
-		90B48A2429C978E700FF9283 /* projectDemoSDKTests */ = {
-			isa = PBXGroup;
-			children = (
-				90B48A2529C978E700FF9283 /* projectDemoSDKTests.swift */,
-			);
-			path = projectDemoSDKTests;
 			sourceTree = "<group>";
 		};
 		90B48A3029C9791600FF9283 /* Frameworks */ = {
@@ -207,6 +199,7 @@
 				TargetAttributes = {
 					90B48A1729C978E700FF9283 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					90B48A1F29C978E700FF9283 = {
 						CreatedOnToolsVersion = 14.2;
@@ -269,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90B48A6D29C9827900FF9283 /* projectDemoSDK.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90B48A2629C978E700FF9283 /* projectDemoSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +436,7 @@
 		90B48A2B29C978E700FF9283 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -467,6 +461,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -475,6 +470,7 @@
 		90B48A2C29C978E700FF9283 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -507,6 +503,7 @@
 		90B48A2E29C978E700FF9283 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L5528DT8XG;
@@ -523,6 +520,7 @@
 		90B48A2F29C978E700FF9283 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L5528DT8XG;
